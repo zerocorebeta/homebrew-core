@@ -1,8 +1,9 @@
 class Optionk < Formula
   desc "OptionK CLI and server application"
   homepage "https://github.com/zerocorebeta/OptionK"
-  url "https://api.github.com/repos/zerocorebeta/Option-K/tarball/v1.0.0"
-  sha256 "0a5759197d322ff29025a907b9894dc0e83461e2ad5bb76a19efb9ea50b043d7"
+  url "https://api.github.com/repos/zerocorebeta/Option-K/tarball/v1.0.1"
+  sha256 "60970eeb8846965b0cf7fcb3e42291ad5d539c83b4707c51752f29870ffeb6e1"
+  version "1.0.1"
   license "MIT"
 
   depends_on "python@3.12"
@@ -97,17 +98,8 @@ class Optionk < Formula
     
   def post_install
     ohai "Installation Complete!"
-    ohai "To finalize the setup, please follow these steps:"
-    ohai "1. Create the configuration directory:"
-    ohai "   mkdir -p ~/.optionk"
-    ohai "2. Create the configuration file:"
-    ohai "   touch ~/.optionk/config.ini"
-    ohai "3. Add the default configuration content to the file."
-    ohai "   You can find the sample configuration file at:"
-    ohai "   https://github.com/zerocorebeta/Option-K/blob/master/config.ini"
-    ohai "   Copy the content from the sample file and paste it into ~/.optionk/config.ini"
-    ohai "4. Open ~/.optionk/config.ini and add your API key to the file."
-    ohai "   Replace the placeholder 'YOUR_API_KEY_HERE' with your actual API key."
+    puts "Edit the `~/.config/optionk/config.ini` file to configure the AI backend"
+    puts "check https://github.com/zerocorebeta/Option-K?tab=readme-ov-file#configuration for detailed information on this"
 
     ohai "Shell Integration"
     puts "To enable the optionk command `opk`, add the following lines to your shell configuration file (.zshrc, .bashrc, etc.):"
