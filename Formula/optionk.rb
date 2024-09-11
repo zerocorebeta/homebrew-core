@@ -1,9 +1,9 @@
 class Optionk < Formula
   desc "OptionK CLI and server application"
   homepage "https://github.com/zerocorebeta/OptionK"
-  url "https://api.github.com/repos/zerocorebeta/Option-K/tarball/v1.0.3"
+  url "https://api.github.com/repos/zerocorebeta/Option-K/tarball/v1.0.4"
   sha256 "3d279d1e673c486749e2f7a622908e00bd48f790b361aea5cde1f10a6dfdcccd"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   depends_on "python@3.12"
